@@ -1,0 +1,36 @@
+{
+  "product": "Example handheld speaker",
+  "version": "0.1",
+  "colors": {
+    "C-GRAPHITE": { "name": "Graphite", "hex": "#2F3133", "ref": "close to RAL 7024 - match to physical chip" },
+    "C-CHALK":    { "name": "Chalk",    "hex": "#E9E6DF", "ref": "warm white - match to physical chip" },
+    "C-SIGNAL":   { "name": "Signal orange", "hex": "#E2591F", "ref": "match to physical chip" },
+    "C-SAGE":     { "name": "Sage",     "hex": "#8A9A86", "ref": "match to physical chip" },
+    "C-ALU":      { "name": "Clear anodized aluminium", "hex": "#B9BCBF", "ref": "clear anodize on AL6063" },
+    "C-BLACK":    { "name": "Black",    "hex": "#18191A", "ref": "TPE black" }
+  },
+  "materials": {
+    "PC-ABS": { "name": "PC/ABS", "process": "injection moulding", "metallic": 0.0, "ior": 1.58 },
+    "AL6063": { "name": "Aluminium 6063", "process": "extrusion + CNC", "metallic": 1.0, "ior": 1.5 },
+    "TPE":    { "name": "TPE", "process": "overmould", "metallic": 0.0, "ior": 1.5 }
+  },
+  "finishes": {
+    "F-GLOSS": { "name": "SPI A-2 high gloss", "roughness": 0.05, "coat": 1.0, "bump": 0.0 },
+    "F-SATIN": { "name": "SPI B-2 satin", "roughness": 0.30, "coat": 0.0, "bump": 0.0 },
+    "F-MATTE": { "name": "VDI 3400 Ref 27", "roughness": 0.55, "coat": 0.0, "bump": 0.15 },
+    "F-BLAST": { "name": "Bead blast + clear anodize", "roughness": 0.40, "coat": 0.0, "bump": 0.05 },
+    "F-SOFT":  { "name": "Soft-touch", "roughness": 0.70, "coat": 0.0, "bump": 0.0, "sheen": 0.2 }
+  },
+  "cmf": [
+    { "code": "CMF-01", "part": "Upper housing", "material": "PC-ABS", "color": "C-GRAPHITE", "finish": "F-MATTE", "match": ["housing_top*"] },
+    { "code": "CMF-02", "part": "Lower housing", "material": "PC-ABS", "color": "C-GRAPHITE", "finish": "F-MATTE", "match": ["housing_bottom*"] },
+    { "code": "CMF-03", "part": "Buttons",       "material": "PC-ABS", "color": "C-SIGNAL",   "finish": "F-SATIN", "match": ["button*"] },
+    { "code": "CMF-04", "part": "Feet and seals", "material": "TPE",   "color": "C-BLACK",    "finish": "F-SOFT",  "match": ["foot*", "seal*"] },
+    { "code": "CMF-05", "part": "Grille",        "material": "AL6063", "color": "C-ALU",      "finish": "F-BLAST", "match": ["grille*"] }
+  ],
+  "colorways": {
+    "A": {},
+    "B": { "CMF-01": "C-CHALK", "CMF-02": "C-SAGE" },
+    "C": { "CMF-01": "C-ALU", "CMF-03": "C-GRAPHITE" }
+  }
+}
