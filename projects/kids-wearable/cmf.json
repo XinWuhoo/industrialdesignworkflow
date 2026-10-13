@@ -1,0 +1,35 @@
+{
+  "product": "Kids wearable",
+  "version": "0.1",
+  "colors": {
+    "C-CREAM":  { "name": "Cream",     "hex": "#F4EFE6", "ref": "to match" },
+    "C-SKY":    { "name": "Sky blue",  "hex": "#8EC5E8", "ref": "to match" },
+    "C-BERRY":  { "name": "Berry pink","hex": "#E86A8E", "ref": "to match" },
+    "C-SUNNY":  { "name": "Sunny yellow", "hex": "#F6C945", "ref": "to match" },
+    "C-MINT":   { "name": "Mint",      "hex": "#8FD3B6", "ref": "to match" },
+    "C-SCREEN": { "name": "Display glass", "hex": "#1E2430", "ref": "black glass / PMMA lens" }
+  },
+  "materials": {
+    "PC-ABS": { "name": "PC/ABS", "process": "injection moulding", "metallic": 0.0, "ior": 1.58 },
+    "LSR":    { "name": "LSR silicone", "process": "liquid silicone moulding", "metallic": 0.0, "ior": 1.41 },
+    "TPE":    { "name": "TPE", "process": "injection moulding", "metallic": 0.0, "ior": 1.5 },
+    "PMMA":   { "name": "PMMA lens", "process": "injection moulding", "metallic": 0.0, "ior": 1.49 }
+  },
+  "finishes": {
+    "F-GLOSS": { "name": "SPI A-2 high gloss", "roughness": 0.05, "coat": 1.0, "bump": 0.0 },
+    "F-SATIN": { "name": "SPI B-2 satin", "roughness": 0.30, "coat": 0.0, "bump": 0.0 },
+    "F-MATTE": { "name": "Matte silicone", "roughness": 0.60, "coat": 0.0, "bump": 0.05, "sheen": 0.15 },
+    "F-SOFT":  { "name": "Soft-touch", "roughness": 0.70, "coat": 0.0, "bump": 0.0, "sheen": 0.2 }
+  },
+  "cmf": [
+    { "code": "CMF-01", "part": "Pod / module", "material": "PC-ABS", "color": "C-CREAM", "finish": "F-SOFT", "match": ["pod*", "module*", "face*"] },
+    { "code": "CMF-02", "part": "Strap / bumper / links", "material": "LSR", "color": "C-SKY", "finish": "F-MATTE", "match": ["strap*", "bumper*", "link*", "ear*"] },
+    { "code": "CMF-03", "part": "Button, pin, ring, name bead", "material": "PC-ABS", "color": "C-SUNNY", "finish": "F-GLOSS", "match": ["button*", "pin*", "ring*", "keeper*", "bead_name*"] },
+    { "code": "CMF-04", "part": "Display lens", "material": "PMMA", "color": "C-SCREEN", "finish": "F-GLOSS", "match": ["lens*", "screen*"] }
+  ],
+  "colorways": {
+    "A-Pebble": {},
+    "B-Buddy":  { "CMF-02": "C-BERRY" },
+    "C-Beads":  { "CMF-01": "C-MINT" }
+  }
+}
