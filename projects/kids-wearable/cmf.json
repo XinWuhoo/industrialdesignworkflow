@@ -23,8 +23,8 @@
   },
   "cmf": [
     { "code": "CMF-01", "part": "Pod / module", "material": "PC-ABS", "color": "C-CREAM", "finish": "F-SOFT", "match": ["pod*", "module*", "face*"] },
-    { "code": "CMF-02", "part": "Strap / bumper / links", "material": "LSR", "color": "C-SKY", "finish": "F-MATTE", "match": ["strap*", "bumper*", "link*", "ear*"] },
-    { "code": "CMF-03", "part": "Button, pin, ring, name bead", "material": "PC-ABS", "color": "C-SUNNY", "finish": "F-GLOSS", "match": ["button*", "pin*", "ring*", "keeper*", "bead_name*"] },
+    { "code": "CMF-02", "part": "Strap / bumper / links", "material": "LSR", "color": "C-SKY", "finish": "F-MATTE", "match": ["strap*", "bumper*", "link*", "ear*", "keeper*"] },
+    { "code": "CMF-03", "part": "Button, pin, ring, name bead", "material": "PC-ABS", "color": "C-SUNNY", "finish": "F-GLOSS", "match": ["button*", "pin*", "ring*", "bead_name*"] },
     { "code": "CMF-04", "part": "Display lens", "material": "PMMA", "color": "C-SCREEN", "finish": "F-GLOSS", "match": ["lens*", "screen*"] }
   ],
   "colorways": {

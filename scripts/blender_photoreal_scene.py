@@ -150,9 +150,9 @@ def main():
 
     # Lights: soft key above-left, rim behind, fill opposite the key. Energy scales with distance².
     d = size * 3
-    make_light("STUDIO_key", center + Vector((-d, -d * 0.6, d)), center, size * 3, 400 * d * d)
-    make_light("STUDIO_rim", center + Vector((d * 0.4, d * 1.2, d * 0.8)), center, size * 2, 250 * d * d)
-    make_light("STUDIO_fill", center + Vector((d * 1.2, -d * 0.4, d * 0.3)), center, size * 4, 80 * d * d)
+    make_light("STUDIO_key", center + Vector((-d, -d * 0.6, d)), center, size * 3, 40 * d * d)
+    make_light("STUDIO_rim", center + Vector((d * 0.4, d * 1.2, d * 0.8)), center, size * 2, 25 * d * d)
+    make_light("STUDIO_fill", center + Vector((d * 1.2, -d * 0.4, d * 0.3)), center, size * 4, 8 * d * d)
 
     print(f"STUDIO: product size {size:.4g}, camera {focal:.0f} mm at {dist:.4g}; render F12 when ready")
 
